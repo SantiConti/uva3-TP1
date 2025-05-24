@@ -25,11 +25,11 @@
         
             alert("¡Bienvenido/a " + nombre + " " + apellido + "!.");
 
-            let hoy = new Date();
-            let anioNacimiento = hoy.getFullYear() - parseInt(edad);
-            let fechaNacimiento = new Date(anioNacimiento, hoy.getMonth(), hoy.getDate());
-            let diferencia = hoy - fechaNacimiento;
-            let diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            let hoy = new Date(); //tomo la fecha de hoy
+            let anioNacimiento = hoy.getFullYear() - parseInt(edad);  //calculo en año de nacimiento
+            let fechaNacimiento = new Date(anioNacimiento, hoy.getMonth(), hoy.getDate()); //guardo la fecha de nacimiento aproximada
+            let diferencia = hoy - fechaNacimiento; //saco la dicefencia 
+            let diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24)); //calculo la diferencia
             alert("Has vivido aproximadamente " + diasVividos + " días.");
                 
         </script>
